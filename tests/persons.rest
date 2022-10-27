@@ -1,0 +1,50 @@
+GET http://localhost:7071/api/v1/addperson HTTP/1.1
+
+###
+
+POST http://localhost:7071/api/v1/addperson HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "9e8cf95b-4055-4bbe-87ab-9610157aad43",
+    "firstName": "Ibe",
+    "lastName": "Demortier",
+    "email": "dieter.de.preester@howest.be",
+    "locations": [
+      {
+        "city": "Kortrijk",
+        "street": "Graaf Karel De Goedelaan"
+      },
+      {
+        "city": "Brugge",
+        "street": "Sporthal"
+      }
+    ]
+  }
+
+###
+
+
+DELETE http://localhost:7071/api/person/9e8cf95b-4055-4bbe-87ab-9610157aad43 HTTP/1.1
+
+###
+
+PUT http://localhost:7071/api/person HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "f386192d-6619-4169-81ed-07b5222967e1",
+    "firstName": "sander",
+    "lastName": "de maid",
+    "email": "dieter.de.preester@howest.be",
+    "locations": [
+      {
+        "city": "Kortrijk",
+        "street": "Graaf Karel De Goedelaan"
+      },
+      {
+        "city": "Brugge",
+        "street": "Sporthal"
+      }
+    ]
+  }
